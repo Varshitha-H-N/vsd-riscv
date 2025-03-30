@@ -107,3 +107,54 @@ Explanation of Key Commands and Options:
    </details>
 
 ---
+<details>
+<summary><b>Task2</b>:SPIKE Simulation and Compile the C program using RISC-V GCC/SPIKE with the above optimization options.  </summary></br>
+
+# SPIKE SIMULATION
+
+
+## Steps to Compile and run ./a.out thing in riscv
+```sh
+riscv64-unknown-elf-gcc -Ofast -mabi=lp64 -march=rv64i -o sum1ton.o sum1ton.c
+```
+```sh
+spike pk sum1ton.c
+```
+## Steps to Debug RISC-V architecture
+```sh
+spike -d pk sum1ton.c
+```
+//debuger will open as shown above 
+
+//Run untill the starting address of main using the command
+```sh
+untill pc 0 100b0
+//previous value of register
+reg 0 a5
+//do enter and after the update value of a5 is
+reg 0 a5
+```
+// addi sp,sp,-16 means the address of sp is subtracted by 16 to check that
+```sh
+until pc 0 100b8
+reg 0 sp
+q//to quit
+```
+
+
+### The values store in the 64 bits as shown below for the command lui (Load Upper Immediate) "lui a5, 0x376"
+
+
+### Explanation of Key Commands:
+ 1. spike: This is the RISC-V ISA simulator (an instruction set simulator). Spike is commonly used for simulating and testing RISC-V programs. It emulates a RISC-V processor, running programs in a controlled environment.
+ 2. -d: This flag is for debugging mode. It tells Spike to run in debug mode, allowing step-by-step execution, inspecting registers, memory, etc. Useful for identifying issues and analyzing program behavior.
+ 3. pk: This refers to the proxy kernel, which acts as a lightweight operating system for RISC-V. The proxy kernel handles system calls and facilitates program execution in the simulated environment.
+ 4. addi (Add Immediate): addi sp,sp,-16
+    Adds an immediate value (-16) to the value in register sp and stores the result in register sp.
+ 5. lui (Load Upper Immediate): lui a2, 0x31
+    The value in 31 is shifted left by 12 bits and stored in the upper portion of the destination register.   
+
+
+</details>
+</details>
+
