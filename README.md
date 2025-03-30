@@ -112,6 +112,8 @@ Explanation of Key Commands and Options:
 
 # SPIKE SIMULATION
 
+![spike debug](https://github.com/user-attachments/assets/06d47cef-e727-4e37-9e11-f3a1f57fbc70)
+
 
 ## Steps to Compile and run ./a.out thing in riscv
 ```sh
