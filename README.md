@@ -544,44 +544,44 @@ WB_OUT [31:0]: The write-back output signal.
 
 **1. add r6,r1,r2**
 
-!https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(374).png
+![ADD](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(374).png)
 
 **2. sub r7,r1,r2**
 
- https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(375).png 
+![SUBTRACT](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(375).png) 
 
 **3. and r8,r1,r3**
 
-https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(376).png
+![AND](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(376).png)
 
 
 **4. or r9,r2,r5**
  
-https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(377).png
+![OR](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(377).png)
 
 **5. xor r10,r1,r4**
 
-https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(378).png
+![EXOR](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(378).png)
 
 **6. slt r11,r2,r4**
 
-https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(379).png
+![SLT](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(379).png)
  
 **7. addi r12,r4,5**
 
-https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(380).png
+![ADDI](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(380).png)
 
 **8. sw r3,r1,2**
 
-https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(381).png
+![SW](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(381).png)
 
 **10.  beq r0,r0,15**
 
- https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(382).png
+ ![BEQ](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(382).png)
 
 **11.  add r14,r2,r2**
 
- https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(384).png 
+ ![ADD](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(384).png)
 
 </details>
 
