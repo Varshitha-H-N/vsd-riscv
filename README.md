@@ -495,3 +495,93 @@ These fields are extracted and combined to form a 21-bit signed immediate value,
 
 
 </details>
+---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<details><summary><b>
+Task 4:</b>Perform a functional simulation of the given RISC-V Core Verilog netlist and 
+testbench. </summary>
+  Functional simulation of RISC-V cores involves verifying that the core behaves correctly according to its design specifications. This process includes testing all possible instructions, ensuring compliance with the RISC-V instruction set architecture (ISA), and checking for any security vulnerabilities or malicious logic
+
+  # About iverilog and gtkwave
+1. Icarus Verilog is an implementation of the Verilog hardware description language.
+2. GTKWave is a fully featured GTK+ v1. 2 based wave viewer for Unix and Win32 which reads Ver Structural Verilog Compiler generated AET files as well as standard Verilog VCD/EVCD files and allows their viewing.
+
+**Step 1: installation of iverilog and gtkwave**
+   using the below commands in ubuntu
+   ```sh
+   $   sudo apt get update
+   $   sudo apt get install iverilog gtkwave
+   ```
+   
+  **Step 2: clone the repository and download the netlist files for simulation by entering the following commands in terminal.**
+  ```sh
+   $ git clone https://github.com/vinayrayapati/iiitb_rv32i
+   $ cd iiitb_rv32i
+   $ gedit iiitb_rv32i.v
+   $ gedit iiitb_rv32i_tb.v
+   ```
+ **Step 3: To simulate and run the verilog code , enter the following commands in your terminal.**
+  ```sh
+ $ iverilog -o iiitb_rv32i iiitb_rv32i.v iiitb_rv32i_tb.v
+ $ ./iiitb_rv32i
+   ```
+**Step 4:To see the output waveform in gtkwave, enter the following commands in your terminal.**
+ ```sh
+ $ gtkwave iiitb_rv32i.vcd
+   ```
+
+
+
+
+## Analysis of output waveforms
+The waveform includes the following key signals:
+
+clk: The clock signal driving the design.
+
+NPC [31:0]: The next program counter value.
+
+WB_OUT [31:0]: The write-back output signal.
+
+
+**1. add r6,r1,r2**
+
+!https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(374).png
+
+**2. sub r7,r1,r2**
+
+ https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(375).png 
+
+**3. and r8,r1,r3**
+
+https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(376).png
+
+
+**4. or r9,r2,r5**
+ 
+https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(377).png
+
+**5. xor r10,r1,r4**
+
+https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(378).png
+
+**6. slt r11,r2,r4**
+
+https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(379).png
+ 
+**7. addi r12,r4,5**
+
+https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(380).png
+
+**8. sw r3,r1,2**
+
+https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(381).png
+
+**10.  beq r0,r0,15**
+
+ https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(382).png
+
+**11.  add r14,r2,r2**
+
+ https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(384).png 
+
+</details>
+
