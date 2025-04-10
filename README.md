@@ -490,7 +490,7 @@ These fields are extracted and combined to form a 21-bit signed immediate value,
 
 #  32-bit instruction code for 15 unique RISC-V instructions. 
 
-![32 bit](https://github.com/user-attachments/assets/52b78b4e-a951-4cce-bebb-50bd0d85c690)](https://github.com/Varshitha-H-N/vsd-riscv/blob/16e9b532d77eb1b6774f4d5a8f19373cfa95e65d/task3/main.png)
+![32 bit](https://github.com/Varshitha-H-N/vsd-riscv/blob/16e9b532d77eb1b6774f4d5a8f19373cfa95e65d/task3/main.png)
 
 
 </details>
