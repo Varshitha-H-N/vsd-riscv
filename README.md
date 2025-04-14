@@ -583,5 +583,48 @@ WB_OUT [31:0]: The write-back output signal.
 
  ![ADD](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(384).png)
 
+
+ ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<details><summary><b>
+Task 5:</b>Implementation of Binary to Gray code converter using VSDSquadron Mini Board.</summary>
+
+## Project Overview
+ Binary to Gray code converter 
+ This project demonstrates the implementation of a binary to Gray code converter using the VSDSquadron Mini. The goal is to take a 3-bit binary input from the user and convert it into a 3-bit Gray code output. This conversion is crucial in digital systems for minimizing errors in signal processing and data transmission. The project utilizes the VSDSquadron Mini’s GPIO capabilities and programming flexibility, showcasing an application of RISC-V processors in digital logic design.
+
+## Pin Configuration
+| **Component** | **Pin** |
+|----------------|---------|
+| **VSD SQUADRON BOARD** | **Led** | **Button**|
+| **Led 1** | **Pin0(PD0)** |
+| **Led 2** | **Pin2(PD2)** |
+| **Led 3** | **Pin3(PD3)** |
+| **Button 1** | **Pin4(PD4)** |
+| **Button 2** | **Pin5(PD5)** |
+| **Button 3** | **Pin6(PD6)** |
+
+
+## Truth Table
+
+![TRUTHTABLE](https://github.com/Varshitha-H-N/vsd-riscv/blob/50374b1fc83881e673b9b596e96504f1b39e4383/task5/image018.png)
+
+## Circuit Diagram
+
+![CIRCUIT](https://github.com/Varshitha-H-N/vsd-riscv/blob/50374b1fc83881e673b9b596e96504f1b39e4383/task5/Screenshot%20(388).png)
+
+## Working
+The converter operates by reading a 3-bit binary input through buttons, applying the binary to Gray code conversion formula, and displaying the resulting Gray code on LEDs. The conversion process involves exclusive OR operations to calculate each bit of the Gray code based on the input binary bits. This project provides a practical example of digital logic design using a RISC-V based development board.
+
+## Code
+The code includes functions for GPIO configuration, the XOR logic for binary to Gray conversion, and the main loop for continuous operation. The project demonstrates handling input from GPIO pins, processing the data according to digital logic principles, and outputting the result through GPIO pins.
+
+## Demonstration video
+
+https://github.com/Varshitha-H-N/vsd-riscv/blob/50374b1fc83881e673b9b596e96504f1b39e4383/task5/WhatsApp%20Video%202025-04-14%20at%2011.02.37%20AM%20(1).mp4
+
+</details>
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+
 </details>
 
