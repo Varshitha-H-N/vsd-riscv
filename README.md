@@ -584,8 +584,12 @@ WB_OUT [31:0]: The write-back output signal.
  ![ADD](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(384).png)
 
 
- ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------<details><summary><b>
-Task 5:</b>Implementation of Binary to Gray code converter using VSDSquadron Mini Board.</summary>
+ --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+ 
+<details><summary><b>
+   
+Task 5:</b>Implementation of Binary to Gray code converter using VSDSquadron Mini Board. </summary>
+
 
 ## Project Overview
  Binary to Gray code converter 
@@ -623,8 +627,4 @@ https://drive.google.com/file/d/15MvrX2tMbzq0z_6PSRQCnOxmc9tYpWsI/view?usp=drive
 
 </details>
 
------------------------------------------------------------------------------------------------------------------------------------------------
-
-
-</details>
-
+--------------------------------------------------------------------------------------------------------------------------------------------
