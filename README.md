@@ -628,3 +628,107 @@ https://drive.google.com/file/d/15MvrX2tMbzq0z_6PSRQCnOxmc9tYpWsI/view?usp=drive
 </details>
 
 --------------------------------------------------------------------------------------------------------------------------------------------
+<details><summary><b>
+Task 6:</b>Project Implementation</summary>
+
+## Steps to implement
+1. Hardware Setup:
+  - VSDSquadron Mini RISC-V Board
+   
+  - Button
+   
+   -LEDs 
+   
+  - Breadboard and jumper wires (for connections)
+   
+  - Power supply (USB or external source)
+
+2.Compilation and Upload:
+
+-Compile the code
+
+-Upload to VSDSquadron Mini Board
+
+3.Testing and Debugging:
+
+-Input testing
+
+-Debugging
+
+## Expected Output
+
+
+The LEDs will turn on accordingly based on the button pressed and gray coded will be output.
+
+
+## Code Implementation
+```sh
+#include <ch32v00x.h>
+#include <debug.h>
+int xor(int bit1, int bit2)
+{ int xor = bit1 ^ bit2;
+return xor;
+}
+
+void GPIO_Config(void)
+{ GPIO_InitTypeDef GPIO_InitStructure = {0}; //structure variable used for the GPIO configuration
+RCC_APB2PeriphClockCmd(RCC_APB2Periph_GPIOD, ENABLE); // to Enable the clock for Port D
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_4 | GPIO_Pin_5 | GPIO_Pin_6 ; // Defines which Pin to configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_IPU; // Defines Input Type
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+GPIO_InitStructure.GPIO_Pin = GPIO_Pin_0 | GPIO_Pin_2 | GPIO_Pin_3 ; // Defines which Pin to configure
+GPIO_InitStructure.GPIO_Mode = GPIO_Mode_Out_PP; // Defines Output Type
+GPIO_InitStructure.GPIO_Speed = GPIO_Speed_50MHz; // Defines speed
+GPIO_Init(GPIOD, &GPIO_InitStructure);
+}
+int main(void)
+{ uint8_t b0, b1, b2, g0 , g1, g2 = 0;
+NVIC_PriorityGroupConfig(NVIC_PriorityGroup_2);
+SystemCoreClockUpdate();
+Delay_Init();
+GPIO_Config();
+while(1)
+{ b0 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_4);
+b1 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_5);
+b2 = GPIO_ReadInputDataBit(GPIOD, GPIO_Pin_6);
+g0 = xor(0, b0);
+g1 = xor(b0, b1);
+g2 = xor(b1, b2);
+if(g0 == 0)
+{ GPIO_WriteBit(GPIOD, GPIO_Pin_0, RESET); }
+else
+{ GPIO_WriteBit(GPIOD, GPIO_Pin_0, SET); }
+if(g1 == 0)
+{ GPIO_WriteBit(GPIOD, GPIO_Pin_2, RESET); }
+else
+{ GPIO_WriteBit(GPIOD, GPIO_Pin_2, SET); }
+if(g2 == 0)
+{ GPIO_WriteBit(GPIOD, GPIO_Pin_3, RESET); }
+else
+{ GPIO_WriteBit(GPIOD, GPIO_Pin_3, SET); }
+}
+}
+ 
+```
+
+## Applications
+-It is used in analog to digital converters.
+
+-In digital communication for correction of an error.
+
+-It reduces errors while changing the signals from analog to digital.
+
+-Mathematical puzzles.
+
+-Minimization of a Boolean circuit.
+
+-It is used for communication between two clock domains.
+
+-Genetic algorithms.
+
+## Conclusion
+This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The Binary to Gray Code is implemented successfully using the RISC-V Processors VSDSquadron Mini
+and the video for the same is attached with this report. This project reinforces the fundamental concepts of digital design.Overall, this project was a valuable learning experience.
+
+</details>
+ 
