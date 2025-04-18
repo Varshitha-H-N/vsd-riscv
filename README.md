@@ -582,7 +582,9 @@ WB_OUT [31:0]: The write-back output signal.
 **11.  add r14,r2,r2**
 
  ![ADD](https://github.com/Varshitha-H-N/vsd-riscv/blob/d682b9a8e5647daee93bdeba2f7ac1ee71c2e154/task4/Screenshot%20(384).png)
-
+ 
+</details>
+</details>
 
  --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
  
@@ -626,7 +628,7 @@ The code includes functions for GPIO configuration, the XOR logic for binary to 
 https://drive.google.com/file/d/15MvrX2tMbzq0z_6PSRQCnOxmc9tYpWsI/view?usp=drive_link
 
 </details>
-
+</details>
 --------------------------------------------------------------------------------------------------------------------------------------------
 <details><summary><b>
 Task 6:</b>Project Implementation</summary>
@@ -730,5 +732,6 @@ else
 This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The Binary to Gray Code is implemented successfully using the RISC-V Processors VSDSquadron Mini
 and the video for the same is attached with this report. This project reinforces the fundamental concepts of digital design.Overall, this project was a valuable learning experience.
 
+</details>
 </details>
  
