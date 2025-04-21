@@ -623,9 +623,6 @@ The converter operates by reading a 3-bit binary input through buttons, applying
 ## Code
 The code includes functions for GPIO configuration, the XOR logic for binary to Gray conversion, and the main loop for continuous operation. The project demonstrates handling input from GPIO pins, processing the data according to digital logic principles, and outputting the result through GPIO pins.
 
-## Demonstration video
-
-https://drive.google.com/file/d/15MvrX2tMbzq0z_6PSRQCnOxmc9tYpWsI/view?usp=drive_link
 
 </details>
 </details>
@@ -727,6 +724,11 @@ else
 -It is used for communication between two clock domains.
 
 -Genetic algorithms.
+
+## Demonstration video
+
+(https://drive.google.com/file/d/15MvrX2tMbzq0z_6PSRQCnOxmc9tYpWsI/view?usp=drive_link)
+
 
 ## Conclusion
 This implementation demonstrates the use of the VSDSquadron Mini board to design a basic digital circuit. The Binary to Gray Code is implemented successfully using the RISC-V Processors VSDSquadron Mini
